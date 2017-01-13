@@ -1,0 +1,16 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Sonam</title>
+        {% else %}
+        <title>Sonam</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>
+            Sonam:<a href="/index">Home</a>
+        </div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
